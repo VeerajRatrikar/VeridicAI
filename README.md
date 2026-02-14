@@ -3,6 +3,17 @@ AI-Powered Coding Assignment Evaluator
 
 Fair. Fast. Intelligent.
 
+🌍 Live Deployment
+
+Frontend (Vercel):
+https://veridicai.vercel.app
+
+Backend API (Render):
+https://your-backend-url.onrender.com
+
+Swagger Docs:
+https://your-backend-url.onrender.com/docs
+
 📌 Overview
 
 VeridicAI is an AI-powered coding assignment evaluator that goes beyond traditional test-case validation. It evaluates submissions across multiple dimensions — correctness, efficiency, readability, structural quality, and edge-case handling — delivering structured, human-like feedback in under two minutes.
@@ -99,6 +110,26 @@ Evaluation Engine
  ├── Readability Analyzer (Pylint)
  └── Feedback Generator
 
+🔄 How Evaluation Works
+
+User uploads Python file or GitHub RAW link
+
+Backend securely executes code in isolated environment
+
+Test cases are run using subprocess
+
+Complexity analysis is performed using Radon
+
+Readability analysis is performed using Pylint
+
+Weighted score is calculated
+
+Structured feedback is generated
+
+Results are returned to frontend dashboard
+
+Total response time: ~1–2 seconds (local) / ~2–5 seconds (production).
+
 🛠️ Tech Stack
 Frontend
 
@@ -163,10 +194,47 @@ Feedback:
 - Efficient implementation detected.
 - Improve variable naming and documentation.
 
-📊 Example Evaluation Dimensions
+📊 Evaluation Dimensions
 
 ✔ Correctness
 ✔ Edge-case handling
 ✔ Algorithmic efficiency
 ✔ Code maintainability
 ✔ Structural clarity
+
+🔐 Security & Isolation
+
+Code execution handled via subprocess with timeout
+
+Temporary file storage with automatic cleanup
+
+Execution timeout to prevent infinite loops
+
+Controlled evaluation environment
+
+📈 Scalability Potential
+
+VeridicAI can be extended to support:
+
+Multi-language evaluation (C/C++/Java)
+
+Plagiarism detection
+
+Submission history tracking
+
+Role-based evaluation
+
+Leaderboard and benchmarking
+
+Cloud database integration
+
+AI-powered optimal solution comparison
+
+
+👨‍💻 Author
+
+Veeraj Ratrikar
+
+💡 Vision
+
+To redefine automated code evaluation by combining fairness, performance intelligence, and AI-driven feedback into one scalable and explainable platform.
